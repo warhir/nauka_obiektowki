@@ -9,4 +9,7 @@ require 'classes/form.php';
 
 $form = new Form();
 $form->setName('form');
+$form->set('name','uniwersalna')->set('id','1');
 echo $form->getName();
+echo $form->id;
+echo Form::NAME;

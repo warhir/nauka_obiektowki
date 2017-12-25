@@ -30,6 +30,11 @@ public function setName($name=null){
         $this->name=self::NAME;
     }
 }
+public function  set ($properties, $value)
+{
+    $this->$properties=$value;
+    return $this;
+}
 public function getName(){
     return $this->name;
 }
